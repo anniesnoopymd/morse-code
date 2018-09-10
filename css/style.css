@@ -1,0 +1,134 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 100px;
+  box-sizing: border-box;
+  background-color: #292B73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panels {
+  display: flex;
+  width: 100%;
+}
+.panels .panel {
+  flex: 5;
+  padding: 30px;
+  background-color: #fff;
+  color: #292B73;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+.panels .panel.yellow {
+  flex: 4;
+  background-color: #FFB637;
+}
+
+h1, h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+textarea:focus {
+  border-color: #292B73;
+}
+
+.buttons {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 0px;
+}
+button.purple {
+  background-color: #292B73;
+  color: white;
+}
+button.yellow {
+  background-color: #FFB637;
+}
+button.white {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.symbol {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-bottom: 3px solid #292B73;
+}
+
+.translist {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  flex-wrap: wrap;
+}
+.translist li {
+  width: 30%;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.decoration {
+  font-size: 500px;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  opacity: 0.1;
+}
+
+.playlist {
+  text-align: center;
+  height: 20px;
+  font-size: 20px;
+}
+.playlist .playing {
+  color: #FFB637;
+}
